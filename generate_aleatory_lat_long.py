@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 # In[5]:
 
 
@@ -8,7 +5,9 @@ import pandas as pd
 import random
 import folium
 
-def generate_random_data(latitude, longitude, radius, num_rows):
+# Link: https://stackoverflow.com/questions/30246435/generate-random-data-with-lat-long/30247616 
+# By: Scott
+def generate_random_data(lat, lon, num_rows):
     points = {"lat": [], "lng": []}
     for _ in range(num_rows):
         lt = random.uniform(-1, 1)*radius + latitude
