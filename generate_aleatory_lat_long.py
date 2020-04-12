@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 # In[27]:
 
 
@@ -9,6 +6,8 @@ import random
 import folium
 import pycristoforo as pyc
 
+# Link: https://stackoverflow.com/questions/30246435/generate-random-data-with-lat-long/30247616 
+# By: Scott
 def generate_random_data(lat, lon, num_rows):
     points = {"lat": [], "lng": []}
     for _ in range(num_rows):
@@ -33,11 +32,6 @@ recife_antigo = folium.Map(
     location=[points.median()[1], points.median()[0]],
     zoom_start=15
 )
-
-#country = pyc.get_shape("Brazil")
-
-#points = pyc.geoloc_generation(country, 2000, "Brazil")
-
 
 # In[42]:
 
