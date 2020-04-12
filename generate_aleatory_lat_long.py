@@ -5,8 +5,7 @@ import pandas as pd
 import random
 import folium
 
-# Link: https://stackoverflow.com/questions/30246435/generate-random-data-with-lat-long/30247616 
-# By: Scott
+# Link: https://stackoverflow.com/questions/10530031/generate-random-locations-nearby-my-location
 def generate_random_data(lat, lon, num_rows):
     points = {"lat": [], "lng": []}
     for _ in range(num_rows):
@@ -40,9 +39,6 @@ for i in points.values:
     ).add_to(recife_antigo)
 
 recife_antigo
-
-
-# In[ ]:
 
 
 
